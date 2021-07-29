@@ -1,0 +1,38 @@
+<button mat-raised-button 
+        color="primary" 
+        (click)="click()"
+        (dblclick)="dblClick()">
+  Button
+</button>
+
+<br>
+
+<button mat-raised-button 
+        color="primary" 
+        (mousedown)="mouseDown()"
+        (mouseup)="mouseUp()">
+  Button
+</button>
+
+<br>
+
+<button mat-raised-button 
+        color="primary"
+        (keyup.enter)="enter()">
+  Button
+</button>
+
+<br>
+
+<input type="text" (keyup)="event($event)">
+<button mat-raised-button 
+        color="primary"
+        (click)="event($event)">
+  Button
+</button>
+
+<mat-checkbox (change)="event($event)"></mat-checkbox>
+<span style="margin-right: 12px;"></span>
+<mat-slide-toggle (change)="event($event)"></mat-slide-toggle>
+
+

@@ -5,6 +5,7 @@ import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.compon
 import { ButtonComponent } from './button/button.component';
 import { HtmlEventComponent } from './html-event/html-event.component';
 import { NgDirectiveComponent } from './ng-directive/ng-directive.component';
+import { ApiComponent } from './api-connect/api.component';
 import { PageComponent } from './page/page.component';
 
 const routes: Routes = [
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'btn', component: ButtonComponent },
   { path: 'event', component: HtmlEventComponent },
   { path: 'ng', component: NgDirectiveComponent },
+  { path: 'api', component: ApiComponent },
   { path: 'page', component: PageComponent }
 ];
 

@@ -1,0 +1,119 @@
+{
+  "sort": "ImportDate desc",
+  "include_total": true,
+  "resource_id": "0dfcc47f-7788-440c-8423-e60e25a78369",
+  "fields": [
+    {
+      "info": { "notes": "", "label": "\u6e2c\u7ad9\u4ee3\u78bc" },
+      "type": "text",
+      "id": "SiteId"
+    },
+    {
+      "info": { "notes": "", "label": "\u6e2c\u7ad9\u540d\u7a31" },
+      "type": "text",
+      "id": "SiteName"
+    },
+    {
+      "info": { "notes": "", "label": "\u7e23\u5e02" },
+      "type": "text",
+      "id": "County"
+    },
+    {
+      "info": { "notes": "", "label": "\u6e2c\u9805\u4ee3\u78bc" },
+      "type": "text",
+      "id": "ItemId"
+    },
+    {
+      "info": { "notes": "", "label": "\u6e2c\u9805\u540d\u7a31" },
+      "type": "text",
+      "id": "ItemName"
+    },
+    {
+      "info": { "notes": "", "label": "\u6e2c\u9805\u82f1\u6587\u540d\u7a31" },
+      "type": "text",
+      "id": "ItemEngName"
+    },
+    {
+      "info": { "notes": "", "label": "\u6e2c\u9805\u55ae\u4f4d" },
+      "type": "text",
+      "id": "ItemUnit"
+    },
+    {
+      "info": { "notes": "", "label": "\u76e3\u6e2c\u65e5\u671f" },
+      "type": "text",
+      "id": "MonitorDate"
+    },
+    {
+      "info": { "notes": "", "label": "\u6578\u503c" },
+      "type": "text",
+      "id": "Concentration"
+    }
+  ],
+  "__extras": { "api_key": "9be7b239-557b-4c10-9775-78cadfc555e9" },
+  "records_format": "objects",
+  "records": [
+    {
+      "SiteId": "22",
+      "SiteName": "湖口",
+      "County": "新竹縣",
+      "ItemId": "2",
+      "ItemName": "一氧化碳",
+      "ItemEngName": "CO",
+      "ItemUnit": "ppm",
+      "MonitorDate": "2021-06-29 00:00:00",
+      "Concentration": "x"
+    },
+    {
+      "SiteId": "22",
+      "SiteName": "湖口",
+      "County": "新竹縣",
+      "ItemId": "3",
+      "ItemName": "臭氧",
+      "ItemEngName": "O3",
+      "ItemUnit": "ppb",
+      "MonitorDate": "2021-06-29 00:00:00",
+      "Concentration": "x"
+    },
+    {
+      "SiteId": "22",
+      "SiteName": "湖口",
+      "County": "新竹縣",
+      "ItemId": "4",
+      "ItemName": "懸浮微粒",
+      "ItemEngName": "PM10",
+      "ItemUnit": "μg/m3",
+      "MonitorDate": "2021-06-29 00:00:00",
+      "Concentration": "x"
+    },
+    {
+      "SiteId": "22",
+      "SiteName": "湖口",
+      "County": "新竹縣",
+      "ItemId": "5",
+      "ItemName": "氮氧化物",
+      "ItemEngName": "NOx",
+      "ItemUnit": "ppb",
+      "MonitorDate": "2021-06-29 00:00:00",
+      "Concentration": "x"
+    },
+    {
+      "SiteId": "22",
+      "SiteName": "湖口",
+      "County": "新竹縣",
+      "ItemId": "1",
+      "ItemName": "二氧化硫",
+      "ItemEngName": "SO2",
+      "ItemUnit": "ppb",
+      "MonitorDate": "2021-06-29 00:00:00",
+      "Concentration": "x"
+    }
+  ],
+  "limit": 5,
+  "offset": 0,
+  "_links": {
+    "start": "/api/v1/aqx_p_140?api_key=9be7b239-557b-4c10-9775-78cadfc555e9&limit=5&year_month=2021_06&format=json",
+    "next": "/api/v1/aqx_p_140?offset=5&api_key=9be7b239-557b-4c10-9775-78cadfc555e9&limit=5&year_month=2021_06&format=json"
+  },
+  "distribution": [{ "qcLevel": "/result/records" }],
+  "total": 40110
+}

@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 import { ButtonComponent } from './button/button.component';
 import { HtmlEventComponent } from './html-event/html-event.component';
+import { NgDirectiveComponent } from './ng-directive/ng-directive.component';
 import { PageComponent } from './page/page.component';
 
 const routes: Routes = [
@@ -11,6 +12,7 @@ const routes: Routes = [
   { path: 'twoway', component: TwoWayBindingComponent },
   { path: 'btn', component: ButtonComponent },
   { path: 'event', component: HtmlEventComponent },
+  { path: 'ng', component: NgDirectiveComponent },
   { path: 'page', component: PageComponent }
 ];
 

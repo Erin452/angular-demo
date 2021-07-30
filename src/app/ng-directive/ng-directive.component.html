@@ -1,0 +1,51 @@
+<!-- Structural Directives -->
+
+<!-- ng-if -->
+<mat-spinner class="loading" color="warn" diameter="300" *ngIf="loading"></mat-spinner>
+<button mat-raised-button (click)="start()">Start</button>
+<button mat-raised-button (click)="stop()">Stop</button>
+
+
+<!-- ng-if-else -->
+<!-- <ng-container *ngIf="isChange; else noChange">
+  <p>World!</p>
+</ng-container>
+<ng-template #noChange>
+  <p>Hello</p>
+</ng-template>
+<button mat-raised-button (click)="changeColor()">Change Color</button> -->
+
+
+<!-- ngSwitch -->
+<!-- <input type="text" [(ngModel)]="statusNum">
+<div>
+  <ng-container [ngSwitch]="statusNum">
+    <span *ngSwitchCase="0" style="color: blue">  {{ status[0] }}</span>
+    <span *ngSwitchCase="1" style="color: blueviolet">{{ status[1] }}</span>
+    <span *ngSwitchCase="2" style="color: green"> {{ status[2] }}</span>
+    <span *ngSwitchCase="3" style="color: red">   {{ status[3] }}</span>
+    <span *ngSwitchDefault>no status</span>
+  </ng-container>
+</div> -->
+
+
+<!-- ngFor -->
+<!-- <p>All status</p>
+<div *ngFor="let item of status; let i = index;">
+  <span>{{ i }} : {{ item }}</span>
+</div> -->
+
+
+<!-- Attribute Directives -->
+
+<!-- ngClass, ngStyle -->
+<!-- <div *ngFor="let item of status; let i = index;">
+  <span [ngStyle]="{'color': color[i]}">{{ status[i] }}</span>
+</div>
+
+<p [ngClass]="{'color-red': isChange}">Text</p>
+<button mat-raised-button (click)="changeColor()">Change Color</button> -->
+
+
+
+

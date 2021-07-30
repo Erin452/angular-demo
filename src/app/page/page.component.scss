@@ -1,0 +1,31 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  .page-circle {
+    height: 46px;
+    width: 46px;
+    background: #FFFFFF;
+    border: 1px solid #DEDEDE;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    line-height: 46px;
+    margin-right: 11.5px;
+    &:last-child {
+      margin-right: 0;
+    }
+    span {
+      color: #000000;
+      font-size: 17.25px;
+    }
+  }
+  .active {
+    background: #E35A2B;
+    span {
+      color: #FFFFFF;
+    }
+  }
+  .pic-lh {
+    line-height: 52px;
+  }
+}

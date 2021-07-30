@@ -1,13 +1,15 @@
-<p>Input Name:</p>
+<!-- <p>Input Name:</p>
 <input type="text">
+
+<p>Hello, {{ inputS }}</p> -->
+
+
+<!-- Two Way Binding -->
+<p>Input Name:</p>
+<input type="text" [(ngModel)]="inputS">
 
 <p>Hello, {{ inputS }}</p>
 
-<!-- Two Way Binding -->
-<!-- <p>Input Name:</p>
-<input type="text" [(ngModel)]="inputS">
-
-<p>Hello, {{ inputS }}</p> -->
 
 <!-- Reactive Forms -->
 <!-- <form [formGroup]="from" (ngSubmit)="print()">
@@ -16,3 +18,9 @@
 </form> -->
 
 <!-- [disabled]="!from.valid" -->
+
+
+
+<!-- @input, @output -->
+<!-- <input type="text" [ngModel]="inputS" (ngModelChange)="inputS=$event"> -->
+<!-- <app-page [defaultPage]="defaultPage" (page)="changePage($event)"></app-page> -->

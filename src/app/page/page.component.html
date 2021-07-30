@@ -1,1 +1,33 @@
-<p>page works!</p>
+<div class="pagination">
+  <div class="page-circle pic-lh">
+    <img src="assets/images/iconArrow_l.png" alt="" />
+  </div>
+  <div class="page-circle"
+      [ngClass]="{'active': pageNum == 1}"
+      (click)="changePage(1)">
+    <span>1</span>
+  </div> 
+  <div class="page-circle"
+      [ngClass]="{'active': pageNum == 2}"
+      (click)="changePage(2)">
+    <span>2</span>
+  </div>
+  <div class="page-circle"
+      [ngClass]="{'active': pageNum == 3}"
+      (click)="changePage(3)">
+    <span>3</span>
+  </div>
+  <div class="page-circle"
+      [ngClass]="{'active': pageNum == 4}"
+      (click)="changePage(4)">
+    <span>4</span>
+  </div> 
+  <div class="page-circle"
+      [ngClass]="{'active': pageNum == 5}"
+      (click)="changePage(5)">
+    <span>5</span>
+  </div>
+  <div class="page-circle pic-lh">
+    <img src="assets/images/iconArrow_r.png" alt="" />
+  </div>
+</div>

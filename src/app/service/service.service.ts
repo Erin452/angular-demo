@@ -11,10 +11,9 @@ export class ServiceService {
   ) { }
 
   getData() {
-    let url = "https://www.dcard.tw/f";
+    let url = "https://github.com/Erin452/angular-demo/blob/develop/src/app/data/data.json";
     let header = new HttpHeaders({
       "Content-Type": "application/json",
-      "Access-Control-Allow-Origin": "*",
     });
 
     return this.http.get<any>(url, { headers: header });

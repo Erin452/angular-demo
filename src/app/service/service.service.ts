@@ -11,7 +11,7 @@ export class ServiceService {
   ) { }
 
   getData() {
-    let url = "https://github.com/Erin452/angular-demo/blob/develop/src/app/data/data.json";
+    let url = "http://localhost:18000/accounts";
     let header = new HttpHeaders({
       "Content-Type": "application/json",
     });

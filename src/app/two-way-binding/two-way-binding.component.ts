@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { FormGroup, FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-two-way-binding',
@@ -15,7 +15,6 @@ export class TwoWayBindingComponent implements OnInit {
   constructor(private fb: FormBuilder) { 
     this.from = this.fb.group({
       name: '',
-      // name: ['', Validators.required ],
     });
   }
 

@@ -6,6 +6,8 @@ import { ButtonComponent } from './button/button.component';
 import { HtmlEventComponent } from './html-event/html-event.component';
 import { NgDirectiveComponent } from './ng-directive/ng-directive.component';
 import { ApiComponent } from './api-connect/api.component';
+import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
+
 import { PageComponent } from './page/page.component';
 
 const routes: Routes = [
@@ -15,6 +17,7 @@ const routes: Routes = [
   { path: 'event', component: HtmlEventComponent },
   { path: 'ng', component: NgDirectiveComponent },
   { path: 'api', component: ApiComponent },
+  { path: 'form', component: ReactiveFormsComponent },
   { path: 'page', component: PageComponent }
 ];
 

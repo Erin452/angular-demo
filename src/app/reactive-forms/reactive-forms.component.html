@@ -3,7 +3,20 @@
   <button type="submit" (click)="submit()">Submit</button>
 </div>
 
-<!-- <form [formGroup]="from" (ngSubmit)="print()">
-  <input type="text" formControlName="name">
+<!-- <form [formGroup]="fromG" (ngSubmit)="print()">
+  <div formGroupName="name">
+    <span>First Name: </span>
+    <input type="text" formControlName="first">
+    <span>Last Name: </span>
+    <input type="text" formControlName="last">
+  </div>
+  <div>
+    <span>Address: </span>
+    <input type="text" formControlName="address">
+    <span>Email: </span>
+    <input type="text" formControlName="email">
+    <span>Phone: </span>
+    <input type="text" formControlName="phone">
+  </div>
   <button type="submit">Submit</button>
 </form> -->

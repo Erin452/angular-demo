@@ -23,6 +23,8 @@
     "@angular/platform-browser": "~12.1.0-",
     "@angular/platform-browser-dynamic": "~12.1.0-",
     "@angular/router": "~12.1.0-",
+    "@ngx-translate/core": "^13.0.0",
+    "@ngx-translate/http-loader": "^6.0.0",
     "path-browserify": "^1.0.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",
@@ -44,7 +46,7 @@
     "karma-jasmine-html-reporter": "~1.7.0",
     "typescript": "~4.3.2"
   },
-  "browser":{
+  "browser": {
     "child_process": false,
     "fs": false
   }

@@ -5,13 +5,14 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
   providedIn: 'root'
 })
 export class ServiceService {
+  urlIP = "http://localhost:18000";
 
   constructor(
     private http: HttpClient
   ) { }
 
   getData() {
-    let url = "http://localhost:18000/accounts";
+    let url = this.urlIP + "/accounts";
     let header = new HttpHeaders({
       "Content-Type": "application/json",
     });

@@ -1,6 +1,8 @@
 const { app, BrowserWindow } = require('electron');
 const url = require('url');
 const path = require('path');
+const { execSync } = require('child_process');
+const fs = require('fs');
 
 let mainWindow;
 
@@ -23,14 +25,28 @@ function createWindow() {
 
   // 打開 DevTools, 包裝前記得 disable
   // mainWindow.webContents.openDevTools();
+  runPy();
 
   mainWindow.on('closed', function () { 
     mainWindow = null;
   });
 }
 
-app.on('ready', createWindow);
+function runPy() {
+  let dirPath = "/Users/chieh-wenchen/Documents/Code/Python/dist/";
+  let cmd = `${dirPath}getJson`
+  console.log(cmd)
+  try {
+    execSync(cmd)
+  } catch(e) {
+    console.log(e)
+  }
+  
+  let json = JSON.parse(fs.readFileSync("/Users/chieh-wenchen/Desktop/data.json"))
+  console.log(json);
+}
 
+app.on('ready', createWindow);
 
 app.on('window-all-closed', function(){ 
   // Mac系统透過 cmd+q 退出前, 不關閉app

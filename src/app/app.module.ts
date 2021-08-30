@@ -26,7 +26,7 @@ import { LanguageComponent } from './language/language.component';
 
 // 語系檔讀取
 export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http);
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
 
 @NgModule({

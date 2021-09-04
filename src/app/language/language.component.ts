@@ -1,3 +1,4 @@
+import { JSDocTagName } from '@angular/compiler/src/output/output_ast';
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
@@ -7,13 +8,21 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./language.component.scss']
 })
 export class LanguageComponent implements OnInit {
-  lang = 'en';
+  lang = '';
 
   constructor(public translate: TranslateService) { 
+    
     translate.addLangs(['en', 'ch']);
-    translate.setDefaultLang(this.lang);
+    
   }
 
   ngOnInit(): void {
+    this.lang = JSON.parse(localStorage.getItem('lang') || '{"lang": "en"}')['lang'];
+    console.log(this.lang);
+    this.translate.setDefaultLang(this.lang);
+  }
+
+  change(lang:any) {
+    localStorage.setItem('lang', JSON.stringify({"lang": lang}));
   }
 }

@@ -1,7 +1,9 @@
-<select [(ngModel)]="lang" (change)="translate.use(lang)">
+<select [(ngModel)]="lang" (change)="translate.use(lang); change(lang);">
   <option value="en">English</option>
   <option value="ch">Chinese</option>
 </select>
 
 <h2>{{ 'page1.test1' | translate }}</h2>
 <h2>{{ 'page1.test2' | translate }}</h2>
+
+<h2 *ngIf="false">{{ 'hello' | translate: {name: "Erin"} }}</h2>

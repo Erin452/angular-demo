@@ -24,7 +24,7 @@ function createWindow() {
   );
 
   // 打開 DevTools, 包裝前記得 disable
-  // mainWindow.webContents.openDevTools();
+  mainWindow.webContents.openDevTools();
   runPy();
 
   mainWindow.on('closed', function () { 

@@ -2,5 +2,6 @@
   "page1": {
     "test1": "Test 1",
     "test2": "Test 2"
-  }
+  },
+  "hello": "Hello {{ name }}"
 }

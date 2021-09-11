@@ -8,6 +8,7 @@ import { NgDirectiveComponent } from './ng-directive/ng-directive.component';
 import { ApiComponent } from './api-connect/api.component';
 import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
 import { LanguageComponent } from './language/language.component';
+import { EditTableComponent } from './edit-table/edit-table.component';
 import { PageComponent } from './page/page.component';
 
 const routes: Routes = [
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'api', component: ApiComponent },
   { path: 'form', component: ReactiveFormsComponent },
   { path: 'lang', component: LanguageComponent },
+  { path: 'table', component: EditTableComponent },
   { path: 'page', component: PageComponent }
 ];
 

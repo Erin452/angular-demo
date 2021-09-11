@@ -12,6 +12,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -23,6 +24,7 @@ import { NgDirectiveComponent } from './ng-directive/ng-directive.component';
 import { ApiComponent } from './api-connect/api.component';
 import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
 import { LanguageComponent } from './language/language.component';
+import { EditTableComponent } from './edit-table/edit-table.component';
 
 // 語系檔讀取
 export function HttpLoaderFactory(http: HttpClient) {
@@ -40,6 +42,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     ApiComponent,
     ReactiveFormsComponent,
     LanguageComponent,
+    EditTableComponent,
   ],
   imports: [
     BrowserModule,
@@ -54,6 +57,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     MatProgressSpinnerModule,
     MatFormFieldModule,
     MatInputModule,
+    MatSelectModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

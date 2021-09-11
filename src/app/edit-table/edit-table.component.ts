@@ -56,19 +56,13 @@ export class EditTableComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    // for (let i in this.data) {
-    //   this.editStatus.push(false);
-    // }
   }
 
   edit(category: string, index: number) {
-    console.log("edit", category, index);
     this.editStatus[index][category] = true;
-    console.log(this.editStatus)
   }
 
   save(category: string, index: number, value: any) {
-    console.log("save", category, index, value);
     this.editStatus[index][category] = false;
   }
 }
